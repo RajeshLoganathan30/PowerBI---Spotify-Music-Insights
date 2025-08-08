@@ -1,93 +1,110 @@
 # 🎵 Power BI Spotify Music Insights
 
-## Overview
-This project applies advanced Power BI techniques to analyze Spotify music streaming data and build a dynamic, app-like music discovery experience. It showcases how rich visual interactivity and DAX logic can be used to explore track-level insights, build recommendation systems, and simulate interactive dashboards.
+![Power BI](https://img.shields.io/badge/PowerBI-Advanced-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![GitHub last commit](https://img.shields.io/github/last-commit/YourUsername/Spotify-Music-PowerBI)
 
 ---
 
-## Objective
-To develop an interactive report that surfaces top songs and recommendations by mood or characteristics using advanced Power BI features such as:
-- Bookmarks
-- DAX-based segmentation
-- Drillthroughs
-- Page navigation
-- Dynamic visuals
+## ✅ Overview
+This repository demonstrates a fully interactive **Power BI dashboard** analyzing Spotify streaming data. It applies multiple advanced **Power BI concepts** to explore track popularity, mood-based segmentation, and song recommendation systems.
 
-This project simulates a lightweight, front-end recommendation engine driven entirely in Power BI.
-
----
-
-## Tools & Technologies
-- Power BI Desktop (.pbix files)
-- Spotify Music Dataset (via Kaggle / Spotify API)
-- Power Query for data cleaning
-- DAX for calculated columns, measures, and dynamic filters
-- Power BI service (optional for publishing)
+✔️ Star Schema Data Model  
+✔️ Custom DAX Measures & KPIs  
+✔️ Interactive UX with Bookmarks & Navigation  
+✔️ Drillthroughs, Tooltips, and Slicers  
+✔️ Real-time Filtering & Mood Clustering  
 
 ---
 
-## Power BI Concepts Applied
-### 🧠 Data Modeling & Calculations
-- Star schema with a central `Tracks` fact table linked to `Artists`, `Genres`, and `Dates`
+## 📊 Dataset Summary
+- **Source**: Spotify API / Kaggle Dataset  
+- **Tracks**: ~10,000+  
+- **Features**: Danceability, Energy, Acousticness, Valence, Popularity, Genre, Artist
+
+---
+
+## 🧠 Power BI Concepts Applied
+
+### 📐 Data Modeling & Calculations
+- Star schema with central `Tracks` fact table linked to `Artists`, `Genres`, `Dates`
 - Custom DAX measures:
-  - `Top N Songs by Metric`
-  - `Dynamic Ranking by Popularity, Danceability, Energy`
-  - `Average by Cluster`
+  - Top N Songs by Metric
+  - Dynamic Ranking by Popularity, Danceability, Energy
+  - Average by Cluster
   - Mood/Valence calculation
 
-### 🔁 Interactivity & UX
-- **Bookmarks**:
-  - Toggle between moods (Chill, Energetic, Acoustic)
-  - Simulate button-based navigation
-- **Page Navigation**:
-  - Back and forth across report pages
-  - Replaces tabs with intuitive UX
-- **Slicers & Sync**:
-  - Global filters (e.g., genre, release year)
-  - Slicer sync across pages
-- **Drillthrough Pages**:
-  - Song-specific drillthrough report
-  - Provides detail metrics on acousticness, energy, danceability, valence
-- **Custom Tooltips**:
-  - Visual tooltips for bar charts and scatter plots with extra song context
-- **Dynamic Titles**:
-  - DAX-based card visuals that change with slicer selection
+### 🎛️ Interactivity & UX
+- **Bookmarks**: Mood toggles (Chill, Energetic, Acoustic), UI simulation  
+- **Page Navigation**: Button-based transitions between pages  
+- **Slicers & Sync**: Global filters (genre, year), slicer syncing  
+- **Drillthrough Pages**: Song-level insights with acoustic details  
+- **Custom Tooltips**: Contextual popups for visuals  
+- **Dynamic Titles**: DAX-driven slicer-responsive headings  
 
 ---
 
-## Reports Included
+## 📊 Reports Included
 
-### 🎧 `Music.pbix` – Popular Song Insights
-- Popularity leaderboard
-- Track features overview (scatter + bar + custom KPIs)
-- Filterable by genre, artist, year, mood
+### 🎧 Music Insights Report (`Music.pbix`)
+Tracks trends by:
+- Popularity
+- Danceability
+- Energy
+- Acousticness
+- Valence
 
-> 📸 _Insert screenshot: music_insights_main_page.png_
-
-### 📻 `song suggestion.pbix` – Recommendation Engine
-- Built entirely with bookmarks, buttons, hidden visuals
-- Suggests songs based on mood clusters:
-  - Chill (low energy + high acoustic)
-  - Energetic (high energy + high danceability)
-  - Acoustic (low electronic + high acousticness)
-- Full navigation and mood switch simulated using bookmarks only
-
-> 📸 _Insert screenshot: suggestion_dashboard.png_
+📸 *Insert Screenshot:* `music_insights_main_page.png`  
+> Includes KPIs, scatter plots, slicers, bar charts
 
 ---
 
-## Business & Technical Value
+### 📻 Mood-Based Recommendation Engine (`song suggestion.pbix`)
+Simulates a recommendation system using:
+- Mood clusters (Chill, Energetic, Acoustic)
+- DAX logic for mood classification
+- Navigation via bookmarks
+
+📸 *Insert Screenshot:* `suggestion_dashboard.png`  
+> Mood buttons, dynamic tables, KPIs
+
+---
+
+## 💼 Business & Technical Value
 This project demonstrates how Power BI can:
-
-- Simulate recommendation systems
-- Enable lightweight application-like dashboards using bookmarks and page navigation
-- Support clustering, filtering, and song mood exploration via UX-centric visuals
-- Be applied for music industry data exploration, user behavior tracking, and visual storytelling
+- Simulate recommendation engines
+- Mimic app-like UI with navigation and mood toggles
+- Enable data storytelling with mood and genre filters
+- Support music data exploration and cluster-based personalization
 
 ---
 
-## Usage Instructions
-1. Open `.pbix` file in Power BI Desktop
-2. Use genre/year/mood slicers to explore trends
-3. Click bookmarks to toggle mood recommendations
-4. Hover for custom tooltips or drill into song pages
+## 🛠 Tech Stack
+- Power BI Desktop  
+- Power Query (M)  
+- DAX for measures and UX logic  
+- GitHub (for versioning & documentation)  
+- *(Optional)* Power BI Service for deployment
+
+---
+
+## 🧪 How to Use
+1. Clone or download this repository
+2. Open `Music.pbix` or `song suggestion.pbix` in Power BI Desktop
+3. Use slicers and mood filters to explore insights
+4. Navigate with bookmarks and buttons
+5. Click on songs for detailed drillthroughs
+
+---
+
+## 🚀 Next Enhancements
+- Spotify API integration for real-time data  
+- Power Automate to generate playlists  
+- Mood clustering in Power Query  
+- Power Apps for interactive feedback  
+
+---
+
+✅ *This is a portfolio-grade Power BI project built to demonstrate DAX mastery, advanced UX interactivity, and real-world business storytelling.*
+
