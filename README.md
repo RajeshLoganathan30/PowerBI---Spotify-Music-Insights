@@ -55,8 +55,7 @@ Tracks trends by:
 - Acousticness
 - Valence
 
-📸 *Insert Screenshot:* `music_insights_main_page.png`  
-> Includes KPIs, scatter plots, slicers, bar charts
+![Features](Music_features.png)
 
 ---
 
@@ -66,9 +65,9 @@ Simulates a recommendation system using:
 - DAX logic for mood classification
 - Navigation via bookmarks
 
-📸 *Insert Screenshot:* `suggestion_dashboard.png`  
-> Mood buttons, dynamic tables, KPIs
-
+![Suggestion](Suggestion.png)
+![Popular_songs](Popular_songs.png) ![Popular_songs_2](Popular_songs_2.png) 
+![Popular_songs_3](Popular_songs_3.png) ![Popular_songs_4](Popular_songs_4.png)
 ---
 
 ## 💼 Business & Technical Value
